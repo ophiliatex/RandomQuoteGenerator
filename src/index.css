@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Merriweather&family=Playfair+Display&family=Lora&family=Roboto+Slab&display=swap');
 
 body {
     margin: 0;
@@ -45,7 +45,7 @@ h1 {
     margin-bottom: 10px;
     font-weight: 400;
     font-style: normal;
-    font-family: "satisfy", cursive;
+    font-family: 'Playfair Display', serif;
 }
 
 .quote-author {
@@ -71,6 +71,17 @@ h1 {
     background-color: rgb(42, 42, 255);
 }
 
+@keyframes loadingAnimation {
+    0% { opacity: 0.2; }
+    20% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
+.loading {
+    font-size: 1.5em;
+    color: #f1356d;
+    animation: loadingAnimation 1.5s infinite;
+}
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
